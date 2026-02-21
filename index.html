@@ -4,10 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>Astro Weight Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Write your markup here  -->
+
+  <h1 id="main-header">I'm an Astro Weight Calculator!</h1>
+
+  <div class="content-wrapper">
+    <div class="weight-wrapper">
+      <label for="user-weight">Enter your Weight:</label>
+      <input id="user-weight" type="text" placeholder="Weight (lbs)">
+    </div>
+
+    <div class="planet-wrapper">
+      <label for="planets">Select a Planet</label>
+      <select id="planets"></select>
+    </div>
+  </div>
+
+  <div class="output-wrapper">
+    <p id="output"></p>
+  </div>
+
+  <button id="calculate-button">Calculate!</button>
 
   <script src="main.js" charset="utf-8"></script>
 </body>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+
+body {
+    background-image: url("https://images.pexels.com/photos/14618894/pexels-photo-14618894.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Raleway Dots', 'sans-serif';
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+/* .main-header {
+    font-size: x-large;
+} */
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 3.125rem;
+}
+
+.weight-wrapper, .planet-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#user-weight, #planets {
+    background: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: .0625rem solid #eeeeee;
+}
+
+#calculate-button {
+    padding: 16px;
+    border-radius: 0;
+    width: 10%;
+    font-family: 'Raleway Dots', 'sans-serif';
+    margin-top: 50px;
+    background-color: white;
+    border-style: none;
+}
