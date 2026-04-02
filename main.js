@@ -12,6 +12,7 @@ var planets = [
   ["Sun", 27.9],
 ];
 
+// Calculates the weight of the user on a given planet
 function calculateWeight(weight, planetName) {
   let result = null;
   planets.forEach((planet) => {
@@ -23,6 +24,7 @@ function calculateWeight(weight, planetName) {
   return result;
 }
 
+// Populates the planets in the dropdown menu
 let planetSelection = document.getElementById("planets");
 planets.reverse().forEach((planet) => {
   let option = document.createElement("option");
@@ -31,6 +33,7 @@ planets.reverse().forEach((planet) => {
   planetSelection.appendChild(option);
 });
 
+// Outputs the results 
 function handleClickEvent(e) {
   let userWeight = Number(document.getElementById("user-weight").value);
   let planetName = document.getElementById("planets").value;
